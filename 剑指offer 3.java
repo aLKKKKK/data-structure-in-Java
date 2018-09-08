@@ -3,17 +3,17 @@ public class Duplicate(){
     private int duplication;
     
     public boolean findDuplicate(int[] array_in, int length){
-        if (array_in == null) || (length <= 0){
+        if ((array_in == null) || (length <= 0)){
             return false;
         }
         for(int i=0; i<length; i++){
-            if (array_in[i] < 0) || (array_in[i] > length-1){
+            if ((array_in[i] < 0) || (array_in[i] > length-1)){
                 return false;
             }
         }
         for(int i=0; i<length; i++){
             while(array_in[i]!=i){
-                if array_in[i] == array_in[array_in[i]]{
+                if (array_in[i] == array_in[array_in[i]]){
                     duplication = array_in[i]； 
                     //System.out.println(array_in[i]);
                     return true;
@@ -43,11 +43,11 @@ public class Duplicate(){
     private int duplication;
     
     public boolean findDuplicate(int[] array_in, int length){
-        if (array_in == null) || (length <= 0){
+        if ((array_in == null) || (length <= 0)){
             return false;
         }
         for(int i=0; i<length; i++){
-            if (array_in[i] < 0) || (array_in[i] > length-1){
+            if ((array_in[i] < 0) || (array_in[i] > length-1)){
                 return false;
             }
         }
@@ -72,10 +72,10 @@ public class Duplicate(){
     }
     
     public int countRange(int[] array, int start, int end, int length){
-        if array == null return 0;
+        if (array == null) return 0;
         int count = 0;
         for(int i=0; i<length; i++){
-            if array[i]>=start && array[i]<=end count += 1;
+            if (array[i]>=start && array[i]<=end) count += 1;
         }
         return count;
     }
